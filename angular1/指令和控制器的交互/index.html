@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>指令复用</title>
+</head>
+
+<!--复用指令-->
+
+<body ng-app="myApp">
+    <div ng-controller="myCtrl1">
+        <loader loadDataFn="loadDate()">滑动加载</loader>
+    </div>
+    <div ng-controller="myCtrl2">
+        <loader loadDateFn="loadDate2()">滑动加载2</loader>
+    </div>
+</body>
+<script src="../js/angular.min.js"></script>
+<script src="main.js"></script>
+</html>
